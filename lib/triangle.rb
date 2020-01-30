@@ -33,7 +33,7 @@ end
     
     isosceles = @tri_l.each { |i| (i == @l1 && i == @l3) || (i == @l2 && i == @l3) || (i == @l2 && i == @l1 )}
     
-    scalene = @l1 != @l2 && @l2 != @l3 
+    scalene = @tri_l.each { |i| (i == @l1) && (@l2 != @l3) && (@l1 != @l2)}
     if equilateral
       :equilateral 
       elsif isosceles
