@@ -40,7 +40,7 @@ def initialize(l1, l2, l3)
      else 
         :scalene
       end
-    elsif @tri_l.any? {|i| i <= 0 ||}
+  elsif @tri_l.any? {|i| i <= 0 }
    
      raise TriangleError
      binding.pry 
