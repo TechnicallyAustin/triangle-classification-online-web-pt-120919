@@ -34,9 +34,9 @@ def initialize(l1, l2, l3)
 
 def kind
     if valid?
-      if @@tri_l.uniq.length == 1
+      if @tri_l.uniq.length == 1
         return :equilateral
-      elsif @@tri_l.uniq.length == 2
+      elsif @tri_l.uniq.length == 2
         return :isosceles
       else
         return :scalene
