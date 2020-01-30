@@ -25,6 +25,7 @@ def initialize(l1, l2, l3)
        false 
    else 
      false 
+     binding.pry
    end
    
    
@@ -42,8 +43,12 @@ def initialize(l1, l2, l3)
    end
  end
  end
-     
+
+class TriangleError
+end
 
      
      
  end
+ 
+ 
