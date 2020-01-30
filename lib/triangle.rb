@@ -22,7 +22,7 @@ length3 = @tri_l[0] + @tri=[1]
 length1 = @tri_l[1] + @tri_l[2] 
 length2 = @tri_l[2] + @tri_l[0]
 
-if @tri_l.none? { |i| i <= 0 } && @l3 > 0and1
+if @tri_l.none? { |i| i <= 0 } && @l3 > length3
   true 
 end 
 end
