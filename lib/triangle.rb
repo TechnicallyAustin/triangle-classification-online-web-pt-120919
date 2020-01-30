@@ -29,10 +29,10 @@ end
  
  
  def kind
-    equilateral = @tri_l.all? { |i| i == @l1 && i == @l2 && i == @l3 }
+    equilateral = @tri_l.all? { |i| i == @l1 && @l1 == @l2 && @l2 == @l3 }
     
-    isosceles = @tri_l.uniq.length = 1 
-    binding.pry 
+    isosceles = @tri_l.each { |i| (i == @l1 && i == @l3) || (i == @l2 && i == @l3) || (i == @l2 && i == @l1 )}
+    
     scalene = @l1 != @l2 && @l2 != @l3 
     if equilateral
       :equilateral 
