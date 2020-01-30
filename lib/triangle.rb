@@ -31,7 +31,7 @@ end
  def kind
     equilateral = @tri_l.all? { |i| i == @l1 && i == @l2 && i == @l3 }
     
-    isosceles = @tri_l.each { |i| (i == @l1 && i == @l3) || (i == @l2 && i == @l3) || (i == @l2 && i == @l1 )}
+    isosceles = @tri_l.uniq.length = 1 
     
     scalene = @l1 != @l2 && @l2 != @l3 
     if equilateral
