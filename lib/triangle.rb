@@ -22,7 +22,9 @@ def initialize(l1, l2, l3)
    @tri_l.each do |length| 
      if (length == @l1) && (@l1 == @l2) && (@l2 == @l3)
        :equilateral
-       @tri_l.uniq 
+     @tri_l.uniq.length
+   end
+ end
        
      
      
