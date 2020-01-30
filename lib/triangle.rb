@@ -25,7 +25,7 @@ def initialize(l1, l2, l3)
        true 
    else 
      false 
-     binding.pry
+     #binding.pry
    end
    
  end
@@ -33,16 +33,14 @@ def initialize(l1, l2, l3)
  
  def kind
    if valid?
-     
      if @tri_l.uniq.length == 1
        :equilateral
      elsif @tri_l.uniq.length == 2
-     :isosceles
-   else 
-     :scalene
-   end
-   
- elsif @tri_l.any? {|i| i <= 0 ||}
+        :isosceles
+     else 
+        :scalene
+      end
+    elsif @tri_l.any? {|i| i <= 0 ||}
    
      raise TriangleError
      binding.pry 
