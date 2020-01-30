@@ -28,7 +28,7 @@ def initialize(l1, l2, l3)
      binding.pry
    end
    
-   
+ end
    end
  
  def kind
