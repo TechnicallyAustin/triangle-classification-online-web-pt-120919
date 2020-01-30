@@ -25,6 +25,7 @@ def valid?
 if @tri_l.none? { |i| i <= 0 } && @l3 > 0and1
   true 
 end 
+end
  
  
  def kind
