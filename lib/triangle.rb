@@ -25,7 +25,7 @@ third = @l1 + @l3
 if @l3 < first || @l1 < second || @l2 < third 
   true 
  end
- 
+ end
  
  
  
