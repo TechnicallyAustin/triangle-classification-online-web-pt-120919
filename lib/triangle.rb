@@ -34,6 +34,8 @@ def initialize(l1, l2, l3)
      if @tri_l.uniq.length == 1
        :equilateral
      elsif @tri_l.uniq.length == 2
+     ::isosceles
+   else 
      :scalene
      
    end
