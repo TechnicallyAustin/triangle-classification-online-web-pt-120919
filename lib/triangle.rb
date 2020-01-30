@@ -45,6 +45,7 @@ def initialize(l1, l2, l3)
  elsif @tri_l.any? {|i| i <= 0}
    
      raise TriangleError
+     binding.pry 
    end 
      
    
