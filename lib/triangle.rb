@@ -35,7 +35,7 @@ def initialize(l1, l2, l3)
        :isosceles
      elsif @tri_l.uniq.length == 2
      :scalene
-   else 
+   elsif @tri_l.all? {|i| i == @l1}
      :equilateral
    end
  end
