@@ -22,7 +22,7 @@ def valid?
 1and2 = @tri_l[1] + @tri_l[2] 
 2and3 = @tri_l[2] + @tri_l[0]
 
-if @tri_l.none? { |i| i <= 0 }
+if @tri_l.none? { |i| i <= 0 } && @l3 > 0and1
   true 
 end 
  
