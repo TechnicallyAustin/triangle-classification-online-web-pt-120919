@@ -33,6 +33,7 @@ def initialize(l1, l2, l3)
  
  def kind
   if !valid?
+    
     if @tri_l.any? {|i| i <= 0 }
       raise TriangleError
     end
@@ -47,7 +48,7 @@ def initialize(l1, l2, l3)
         :scalene
       end
     end
-    
+  end
     
  end
  
