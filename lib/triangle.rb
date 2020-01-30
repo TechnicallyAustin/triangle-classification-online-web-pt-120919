@@ -20,8 +20,9 @@ def initialize(l1, l2, l3)
    first_side = @tri_l[1] + @tri_l[2]
    second_side = @tri_l[2] + @tri_l[0]
    
-   if (first_side > @tri_l[0]) && (second_side > @tri_l[1]) && (third_side > @tri_l[2])
-     true 
+   if (first_side > @tri_l[0]) && (second_side > @tri_l[1]) && (third_side > @tri_l[2]) 
+     if @tri_l.any? {|i| i <= 0 }
+       false 
    else 
      false 
    end
