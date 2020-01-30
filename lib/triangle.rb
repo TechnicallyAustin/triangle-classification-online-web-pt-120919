@@ -21,8 +21,8 @@ def initialize(l1, l2, l3)
    second_side = @tri_l[2] + @tri_l[0]
    
    if (first_side > @tri_l[0]) && (second_side > @tri_l[1]) && (third_side > @tri_l[2]) 
-     if @tri_l.any? {|i| i <= 0 }
-       false 
+     if !@tri_l.any? {|i| i <= 0 }
+       true 
    else 
      false 
      binding.pry
