@@ -42,8 +42,11 @@ def initialize(l1, l2, l3)
      :scalene
    end
    
- else 
+ else
+   begin 
      raise TriangleError
+     rescue TriangleError
+     
      
    
  end
