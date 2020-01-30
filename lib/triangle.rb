@@ -25,6 +25,7 @@ def initialize(l1, l2, l3)
      @tri_l.uniq.length
    end
  end
+ end
        
      
      
