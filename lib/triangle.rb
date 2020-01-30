@@ -19,4 +19,11 @@ def initialize(l1, l2, l3)
  end
  
  def kind 
+   @tri_l.each do |length| 
+     if (length == @l1) && (@l1 == @l2) && (@l2 == @l3)
+       :equilateral
+       @tri_l.uniq 
+       
+     
+     
  end
