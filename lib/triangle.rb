@@ -46,7 +46,7 @@ def initialize(l1, l2, l3)
    begin 
      raise TriangleError
      rescue TriangleError
-     
+   end
      
    
  end
