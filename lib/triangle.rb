@@ -32,7 +32,7 @@ end
     equilateral = @tri_l.all? { |i| i == @l1 && i == @l2 && i == @l3 }
     
     isosceles = @tri_l.uniq.length = 1 
-    
+    binding.pry 
     scalene = @l1 != @l2 && @l2 != @l3 
     if equilateral
       :equilateral 
