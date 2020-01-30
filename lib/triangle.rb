@@ -43,9 +43,9 @@ def initialize(l1, l2, l3)
    end
    
  else
-   begin 
+   
      raise TriangleError
-     
+   end 
      
    
  
