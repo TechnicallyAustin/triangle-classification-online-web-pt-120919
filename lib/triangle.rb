@@ -19,8 +19,11 @@ def initialize(l1, l2, l3)
 def valid?
 # The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality. Further, each side must be larger than 0.
 first = @l1 + @l2 
-@l2 + @l3 
-@l1 + @l3
+second = @l2 + @l3 
+third = @l1 + @l3
+
+if @l3 < first || @l1 < second || @l2 < third 
+  true 
  end
  
  
