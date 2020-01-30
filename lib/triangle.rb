@@ -31,6 +31,9 @@ def initialize(l1, l2, l3)
  end
    end
  
+class TriangleError < StandardError
+
+end
 
 def kind
     if valid?
@@ -47,7 +50,4 @@ def kind
   end
 end
 
-class TriangleError < StandardError
-
-end
 
