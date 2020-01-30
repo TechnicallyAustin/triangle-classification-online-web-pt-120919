@@ -16,17 +16,32 @@ def initialize(l1, l2, l3)
  end
  
  def valid?
- end
+   third_side = @tri_l[0] + @tri_l[1]
+   first_side = @tri_l[1] + @tri_l[2]
+   second_side = @tri_l[2] + @tri_l[0]
+   
+   if (first_side > @tri_l[0]) && (second_side > @tri_l[1]) && (third_side > @tri_l[2])
+     true 
+   else 
+     false 
+   end
+   
+   
+   end
  
- def kind 
-   @tri_l.each do |length| 
-     if (length == @l1) && (@l1 == @l2) && (@l2 == @l3)
-       :equilateral
-     @tri_l.uniq.length
+ def kind
+   if valid?
+     if @tri_l.uniq.length == 1
+       :isosceles
+     elsif @tri_l.uniq.length == 2
+     :scalene
+   else 
+     :equilateral
    end
  end
  end
-       
+     
+
      
      
  end
