@@ -32,11 +32,10 @@ def initialize(l1, l2, l3)
  def kind
    if valid?
      if @tri_l.uniq.length == 1
-       :isosceles
+       :equilateral
      elsif @tri_l.uniq.length == 2
      :scalene
-   elsif @tri_l.all? {|i| i == @l1}
-     :equilateral
+     
    end
  end
  end
