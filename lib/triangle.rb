@@ -39,6 +39,8 @@ def initialize(l1, l2, l3)
      :isosceles
    else 
      :scalene
+   else 
+     raise TriangleError
      
    end
  end
