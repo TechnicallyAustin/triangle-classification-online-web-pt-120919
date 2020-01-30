@@ -21,6 +21,10 @@ def valid?
 0and1 = @tri_l[0] + @tri=[1]
 1and2 = @tri_l[1] + @tri_l[2] 
 2and3 = @tri_l[2] + @tri_l[0]
+
+if @tri_l.none? { |i| i <= 0 }
+  true 
+end 
  
  
  def kind
