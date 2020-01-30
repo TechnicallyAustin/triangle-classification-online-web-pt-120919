@@ -42,7 +42,7 @@ def initialize(l1, l2, l3)
      :scalene
    end
    
- else
+ elsif @tri_l.any? {|i| i <= 0}
    
      raise TriangleError
    end 
